@@ -15,7 +15,7 @@ const App = () =>  {
     const [editMode,setEditMode] = useState(false);
 
 
-    // Mehods
+    // Methods 
     const handleFormSubmit = (e) => { 
         e.preventDefault();
 
