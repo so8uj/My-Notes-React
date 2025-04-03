@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Inter", sans-serif;
+    background: #030010;
+    color: #fff;
+}
+
+.mainWrapper{
+    width: 1280px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 50px;
+}
+.mainWrapper h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.notesContainer,.notes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+.notes{
+    width: 60%;
+    gap: 24px;
+}
+.singleNote {
+    background: #332d3d;
+    width: 45%;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px -5px #ffffff59;
+}
+.singleNote h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.singleNote p{
+    margin-bottom: 16px;
+}
+.addUpdateNote{
+    width: 40%;
+    border-radius: 8px;
+    background: #fff;
+    padding: 20px;
+}
+.addUpdateNote h3{
+    color: #030010;
+    margin-bottom: 20px;
+}
+.input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+.input:not(:last-child){
+    margin-bottom: 10px;
+}
+
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.btn-primary{
+    color: #fff;
+    background: #030010;
+}
+.btn-primary:hover{
+    background: #0d0146;
+}
+.btn-info{
+    background: #6c50f8;
+    color: #fff;
+    margin-right: 10px;
+}
+.btn-info:hover{
+    background: #4e2cfa;
+}
+.btn-danger{
+    background: #f61414;
+    color: #fff;
+}
+.btn-danger:hover{
+    background: #ee2c2c;
+}
+@media screen and (max-width:1300px){
+    .mainWrapper{
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+}
+@media screen and (max-width:1000px){
+    .mainWrapper h2{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .notesContainer{
+        flex-direction: column-reverse;
+    }
+    .addUpdateNote{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .notes{
+        width: 100%;
+    }
+    .singleNote{
+        width: 100%;
+    }
+}
